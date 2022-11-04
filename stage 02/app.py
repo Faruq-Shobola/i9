@@ -7,9 +7,9 @@ app = Flask(__name__)
 def home():
     json_data = request.get_json()
 
-    operation_type = json_data.get('operation_type')
-    x_value = json_data.get('x')
-    y_value = json_data.get('y')
+    operation_type = json_data['operation_type']
+    x_value = json_data['x']
+    y_value = json_data['y']
 
     if operation_type == 'addition':
         result = x_value + y_value
@@ -19,7 +19,7 @@ def home():
         result = x_value * y_value
 
     return jsonify(
-    slackUsername="daily_tee",
-    result=result,
-    operation_type=operation_type
+        slackUsername='daily_tee',
+        result=result,
+        operation_type=operation_type
     )
