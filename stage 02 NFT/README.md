@@ -2,9 +2,11 @@
 ##  Run file Locally 
 
 ### Clone the repository
-``` git clone ```
+``` git clone https://github.com/Faruq-Shobola/i9.git```
 
 ### Navigate to the project directory
+
+``` cd stage 02 NFT ```
 
 run ``` python app.py ```
 
